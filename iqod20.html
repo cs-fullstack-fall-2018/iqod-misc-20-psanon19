@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    var array = [2, [4, 5], 5, [2, 3], 3, [7, 5]];
+    var blankArray = [];
+
+
+    function iqod20(array) {
+
+        for (var i = 0; i<array.length;i++){
+            document.write(array[i]+"<br/>");
+            var e = 0;
+            if (array[i][e]!==undefined) {
+                for (e; e < array[i].length; e++) {
+
+                    blankArray += array[i][e] + ",";
+
+                }
+            }
+            else {
+
+                    blankArray += array[i] + ",";
+
+            }
+
+        }
+        return blankArray
+    }
+
+    console.log(iqod20(array));
+
+</script>
+
+</body>
+</html>
